@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "SmartLab Browser Monitor",
+  "version": "1.0",
+  "description": "Ekstensi untuk memonitor tab browser aktif ke SmartLab Agent.",
+  "permissions": [
+    "tabs"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1:13337/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}

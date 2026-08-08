@@ -1,0 +1,27 @@
+# Kredensial & Env (PALING PENTING)
+.env
+.env.local
+*.env
+
+# Sistem Operasi
+.DS_Store
+Thumbs.db
+
+# Python (Backend)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.venv/
+venv/
+ENV/
+
+# Node / React (Frontend)
+node_modules/
+dist/
+.chunk/
+
+# Folder Uploads (Opsional, jika berisi data dummy/sensitif)
+backend/uploads/
+docs/

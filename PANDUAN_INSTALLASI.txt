@@ -1,0 +1,64 @@
+====================================================================
+         PANDUAN INSTALASI SMARTLAB AGENT & EXTENSION
+====================================================================
+
+Panduan ini ditujukan untuk melakukan instalasi / update Agent SmartLab 
+beserta Ekstensi Browser (Chrome/Edge) di komputer client (mahasiswa).
+
+--------------------------------------------------------------------
+TAHAP 1: PERSIAPAN FILE
+--------------------------------------------------------------------
+1. Copy file/folder berikut dari komputer server (Mac) ke Flashdisk Anda:
+   - File executable Agent terbaru (contoh: "agent.exe") yang sudah di-build, ATAU
+   - Folder "smartlab-agent" jika Anda menjalankan langsung via Python.
+   - Folder "smartlab-extension" (Ini adalah ekstensi browser).
+
+2. Masukkan Flashdisk tersebut ke komputer client (PC Windows).
+3. Pindahkan file "agent.exe" dan folder "smartlab-extension" ke 
+   komputer client (misalnya di drive C:\SmartLab).
+
+--------------------------------------------------------------------
+TAHAP 2: INSTALASI EKSTENSI BROWSER (CHROME / EDGE)
+--------------------------------------------------------------------
+1. Buka browser Google Chrome atau Microsoft Edge di PC client.
+2. Buka halaman pengaturan Ekstensi:
+   - Jika Chrome: ketik "chrome://extensions" di address bar.
+   - Jika Edge: ketik "edge://extensions" di address bar.
+3. Di pojok kanan atas (atau panel kiri di Edge), aktifkan fitur 
+   "Developer mode" (Mode Pengembang).
+4. Setelah Developer mode aktif, akan muncul tombol baru bernama 
+   "Load unpacked" (Muat yang belum dikemas). Klik tombol tersebut.
+5. Sebuah jendela pemilihan folder akan muncul. Cari dan pilih folder 
+   "smartlab-extension" yang telah Anda pindahkan ke PC client tadi.
+6. Klik "Select Folder".
+7. Ekstensi "SmartLab Browser Monitor" sekarang sudah terinstal dan aktif.
+
+--------------------------------------------------------------------
+TAHAP 3: MENJALANKAN AGENT (VERSI TERBARU)
+--------------------------------------------------------------------
+*PENTING: Jika ada agent versi lama yang sedang berjalan, matikan 
+(close/stop) terlebih dahulu dari Task Manager.*
+
+1. Jalankan aplikasi "agent.exe" (atau "python agent.py") di PC client.
+2. Pastikan file "config.exe" sudah pernah diatur (token dan URL sudah 
+   dimasukkan dengan benar).
+3. Biarkan agent berjalan. Agent akan otomatis membuka port lokal (13337) 
+   untuk berkomunikasi dengan ekstensi browser yang baru saja Anda instal.
+
+--------------------------------------------------------------------
+TAHAP 4: PENGUJIAN
+--------------------------------------------------------------------
+1. Buka beberapa tab baru di browser client (misal: buka YouTube, 
+   buka Wikipedia, dll).
+2. Pergi ke Dashboard SmartLab di komputer Anda (Admin/Mac).
+3. Buka halaman Lock Screen dan klik area "CURRENT APP" pada kartu PC 
+   client tersebut.
+4. Jika berhasil, modal popup akan memunculkan daftar setiap tab yang 
+   sedang dibuka oleh mahasiswa.
+
+====================================================================
+Jika ada kendala (misal daftar tidak muncul), pastikan:
+1. Backend server di 10.0.0.100 sudah di-restart dengan kode terbaru.
+2. Ekstensi browser berstatus "On" / aktif di halaman extensions.
+3. PC client terkoneksi ke jaringan yang sama dengan server.
+====================================================================

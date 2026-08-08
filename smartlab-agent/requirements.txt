@@ -1,0 +1,6 @@
+pywin32
+websocket-client
+wmi
+requests
+keyring
+pyinstaller
